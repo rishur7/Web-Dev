@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My Bio Data</h1>
+    <form type="get">
+    <fieldset>
+        <legend>Personal Information</legend>
+        <p>FirstName : <input type="text" placeholder="First Name" name="firstname"> LastName : <input type="text" placeholder="Last Name" name="lastname"></p>
+        <p>Male : <input type="radio" name="gender"> Female: <input type="radio" name="gender"> Other: <input type="radio" name="gender"></p>
+        <p>Date of Birth : <input type="date" name="dob"></p>
+        <p>E-Mail : <input type="email" name="email" placeholder="Enter Your Email"></p>
+        <p>Phone <input type="number" placeholder="+91" name="number"></p>
+        <p>Height <input type="text" placeholder="Height in Feet" name="height"></p> 
+    </fieldset>
+    <fieldset>
+        <legend>Education</legend>
+        <p>School Name : <input type="text" placeholder="School Name" name="schoolname"></p>
+        <p>Class : <input type="text" placeholder="Enter Class" name="class"></p>
+        <p>Stream : <select name="stream">
+        <option value="">Stream</option>
+        <option value="cse">CSE</option>
+        <option value="mechanical">Mechanical</option>
+        <option value="electrical">Electrical</option>
+        </select></p>
+        <p>Marksheet : <input type="file" name="file"> </p>
+    </fieldset>
+    <br>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
