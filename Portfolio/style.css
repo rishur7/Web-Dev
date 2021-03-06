@@ -42,17 +42,9 @@ img{
     color:orangered;
     position: relative;
 }
-section .p1,.p2,.mbtn{
+section .p1,.p2,#mbtn{
     margin-left: 180px;
     display: flex;
-}
-.mbtn{
-    color: orangered;
-    border-color: orange;
-    transition-duration: 0.2s;
-    font-family: 'Arimo', sans-serif; 
-    font-weight: bold;
-    border-radius: 11px;
 }
 .mbtn:hover,:focus{
 box-shadow: 0 0 8px red;
@@ -93,9 +85,9 @@ section .p1,.p2,.mbtn{
     margin-left: 0px;
     text-align: center;
 }
-.mbtn{
+#mbtn{
     font-size: 10px;
-    margin: 25px;
+    margin: 30px;
 }
 #Projects li{
 font-size: 13px;
