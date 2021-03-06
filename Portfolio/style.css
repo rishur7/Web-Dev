@@ -1,0 +1,103 @@
+#item{
+font-weight:bold;
+}
+#nb{
+    background-color: rgb(234, 238, 241);
+}
+#brand {
+    color: orangered;
+}
+#item:hover{
+    color:orangered;
+}
+section div{
+background-color:rgb(234, 238, 241);
+padding: 50px;
+margin-top: 90px;
+margin-left: 70px;
+margin-right: 70px;
+border-radius: 10px;
+}
+.about{
+    background-color:rgb(234, 238, 241);
+    margin-top: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding: 40px;
+    border-radius: 10px;
+}
+img{
+    position: absolute;
+    margin-top:15px;
+    margin-left: 80px;
+    width: 170px;
+    display: flex;
+    border-radius: 10px;
+}
+.p1{
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    display: flex;
+    color:orangered;
+    position: relative;
+}
+section .p1,.p2,.mbtn{
+    margin-left: 180px;
+    display: flex;
+}
+.mbtn{
+    color: orangered;
+    border-color: orange;
+    transition-duration: 0.2s;
+    font-family: 'Arimo', sans-serif; 
+    font-weight: bold;
+    border-radius: 11px;
+}
+.mbtn:hover,:focus{
+box-shadow: 0 0 8px red;
+}
+span{
+    font-family: 'Arimo', sans-serif; 
+}
+.abouthead{
+    color:orangered;
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;
+}
+.dropdown{
+    background-color:rgb(234, 238, 241);
+    margin-top: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding: 40px;
+    border-radius: 10px;
+    overflow: visible;
+}
+.accordion-item button{
+    font-size: 18px;
+}
+#skillul li{
+ background-color: rgb(234, 238, 241);
+ font-size: 18px;
+}
+/* Media Queries */
+@media screen and (max-width:615px){
+img{
+    width: 0px;
+}
+.p1{
+    font-size: 30px;
+}
+section .p1,.p2,.mbtn{
+    margin-left: 0px;
+    text-align: center;
+}
+.mbtn{
+    font-size: 10px;
+    margin: 25px;
+}
+#Projects li{
+font-size: 13px;
+}
+}

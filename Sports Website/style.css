@@ -1,0 +1,231 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+nav{
+    background-color: black;
+    height:7vh;
+}
+ .navul {
+    color:white;
+    display: flex;
+    padding: 15px;
+    list-style-type: none;
+    font-weight: bold;
+    font-family: 'Arimo', sans-serif;
+}
+.navul li{
+    margin-left: 100px;
+}
+.navul li:hover{
+     opacity: 80%;
+    cursor: pointer;
+}
+@media all and (max-width:  360px){
+  #pend{
+   display: none;
+   }
+   .icons li{
+     display: none;
+   }
+   nav .navul li{
+    padding: 2px;
+  }
+}
+@media all and (max-width:  1294px){
+  .cardul li{
+  padding: 5px;
+  }
+  footer{
+    height:100%;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: column;
+  }
+ ul .foottwo li{
+    margin-left: 0px;
+  }
+  .carousel{
+    display: none;
+   }
+  .search,.search::placeholder{
+    width: 110px;
+    font-size:small;
+  }
+  .navul li{
+    padding: 5px;
+  }
+  nav{
+    height: 30vh;
+    padding: 35px;
+  }
+  .navul{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+  }
+  section .mid {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+  }
+  .midul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+.search::placeholder{
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;
+}
+.search{
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;
+}
+/* card rotate */
+section {
+    perspective: 800px; /* to add z axis prespective */
+  }
+  
+  section div {
+    height: 300px;
+    width: 250px;
+  }
+  
+  section div img {
+    height: 300px;
+    width: 250px;
+  }
+  
+  .side-a,.side-b {
+    position: absolute;
+    backface-visibility: hidden;
+  } 
+  .side-b {
+    transform: rotateY(180deg);
+  }
+  
+  h2,h3 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+  
+  .wrap {
+    transition: 1s;
+    transform-style: preserve-3d; /* for 3d space */
+  }
+  
+  .wrap:hover {
+    transform: rotateY(180deg);
+    cursor: pointer;
+  }
+  .cardul{
+      list-style: none;
+      display: flex;
+      margin: auto;
+      flex-wrap: wrap;
+  }
+  .cardul li{
+   margin: auto;
+  }
+.banner{
+  padding: 70px;
+  padding-top: 0;
+}
+.carousel {
+  height: 60vh;
+}
+.carousel-inner {
+  height: 100%;
+  display: flex;
+}
+  .mid{
+      display: flex;
+      margin: auto;
+      width:fit-content;
+      height: 100px;
+      border-radius: 10px;
+      background-color: #dfdfdf;
+  }
+  .midul{
+    color:black;
+    display: flex;
+    margin:auto;
+    list-style-type: none;
+    font-weight: bold;
+    font-family: 'Arimo', sans-serif;
+  }
+  .midul li{
+    margin-left: 50px;
+}
+.midul li:nth-child(6){
+margin-right: 50px;
+}
+.midul li:hover{
+     opacity: 80%;
+    cursor: pointer;
+}
+footer{
+    background-color: black; 
+    padding: 50px;
+    color: white;
+}
+.foot ul {
+    color:white;
+    margin:auto;
+    font-size: 0.7rem;
+    list-style-type: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.foot li{
+    padding: 5px;
+}
+.footone li:hover{
+    opacity: 80%;
+    cursor: pointer;
+}
+.footul {
+  display: flex;
+}
+.foottwo li{
+  margin-left: 40px;
+}
+.foottwo :not(:nth-child(1)) {
+  opacity: 80%;
+}
+.foottwo :not(:nth-child(1)):hover {
+  opacity: 100%;
+  cursor: pointer;
+}
+footer p{
+  position: absolute;
+  font-size: 0.7rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.endfoot{
+  position: absolute;
+  right: 55px;
+  display: flex;
+  list-style-type: none;
+}
+.endfoot li{
+  margin-left: 50px;
+  font-size: 0.7rem;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+.icons{
+display: flex;
+list-style: none;
+position: absolute;
+right: 55px;
+padding: 15px;
+}
+.icons li{
+  margin-left: 20px;
+  cursor: pointer;
+}
