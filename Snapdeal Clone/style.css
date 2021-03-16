@@ -1,0 +1,366 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.nav1 ul li{
+    cursor: pointer;
+}
+nav .nav2 img{
+    width: 147px;
+    height: 39px;
+    margin-top: 15px;
+    margin-left: 85px;
+}
+nav .nav2 {
+    display: flex;
+    height: 70px;
+    background-color: #e40046;
+}
+nav .nav1{
+    display: flex;
+    height: 30px;
+    margin-top: 0px;
+    background-color: #C7003D;
+}
+nav .nav1 p{
+color: white;
+margin-left: 95px;
+padding-top: 7px;
+font-size: 12px;
+font-family: Arial, Helvetica, sans-serif;
+}
+#search {
+    width: 591px;
+    height: 37px;
+    margin-top: 17px;
+    margin-left: 85px;
+    border-radius: 4px 0px 0px 4px;
+    border: none;
+    background-color: #F8F8F8;
+}
+#search::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+    text-align:justify;
+    font-size: 15px;
+    opacity: 60%;
+}
+#mail{
+    width: 190px;
+    height: 36px;
+    border-radius: 4px 0px 0px 4px;
+    border: none;
+    background-color: #f7f7f7;
+}
+#mail::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    text-align:justify;
+    font-size: 13px;
+    opacity: 60%;
+}
+.nav2 #searchbtn{
+    background-color: #333333;
+    border-radius: 0px 4px 4px 0px;
+    height: 38px;
+    width: 120px;
+    font-size: 15px;
+    margin-top: 17px;
+}
+#subscribebtn{
+    background-color: #242424;
+    border-radius: 0px 4px 4px 0px;
+    height: 36px;
+    width: 90px;
+    margin-bottom: 3px;
+    font-size: 13.5px;
+}
+#subscribebtn:hover{
+    background-color: #333333;
+}
+#searchlogo{
+ font-size: 13px;
+ padding-right: 4px;
+}
+#mobilelogo{
+ font-size: 16px;
+ padding-right: 4px;
+}
+#logo{
+    font-size: 20px;
+    padding-left: 4px;
+   }
+   #logo2{
+    font-size: 25px;
+    padding-left: 7px;  
+   }
+.nav1 ul{
+position: absolute;
+list-style: none;
+display: flex;
+right: 91px;
+color: white;
+padding-top: 7px;
+font-size: 12px;
+font-family: Arial, Helvetica, sans-serif;
+}
+.nav1 ul li{
+ margin-left: 30px;
+}
+#sidebtn1{
+    margin-left: 126px;
+    color: white;
+    background-color: #e40046;
+    width: 130px;
+    font-size: 14px;
+    border: 1px solid #C7003D;
+}
+#sidebtn2{
+    color: white;
+    background-color: #e40046;
+    width: 130px;
+    font-size: 14px;
+    border: 1px solid #C7003D;
+}
+#sidebtn2:hover{
+    background-color: #333333;
+    border-radius: 4px 4px 0px 0px;
+    margin-top: 4px;
+}
+.banner{
+    padding: 70px;
+    padding-top: 0;
+    display: flex;
+  }
+  .carousel {
+    height: 300px;
+    width: 873px;
+    
+  }
+  .carousel-inner {
+    height: 100%;
+    display: flex;
+    border-radius: 4px;
+  }
+  aside div{
+width: 230px;
+background-color: #F8F8F8;
+padding: 20px;
+border-radius: 4px;
+margin-right: 15px;
+box-shadow:0px 0px 5px #33333363;
+  }
+  aside ul{
+      list-style: none;
+  }
+  aside p{
+      text-align:start;
+      font-size: 12px;
+  }
+  aside ul li{
+      margin-bottom: 10px;
+      font-size: 12px;
+  }
+  .aside2 img{
+      width: 100px;
+      margin-left: 60px;
+      margin-top: 20px;
+  }
+  .aside2{
+    background-color: #F8F8F8;
+    width: 226px;
+    height: 300px;
+    padding: 10px;
+    margin-left: 15px;
+    overflow: hidden;
+    box-shadow:0px 0px 5px #33333363;
+  }
+  .asidep1{
+      font-size: 14px;
+      opacity: 70%;
+      text-align: center;
+  }
+  .asidep2{
+      text-align:center;
+      font-size: 12px;
+      opacity: 80%;
+  }
+  .asidep3{
+      text-align:center;
+      font-size: 15px;
+      opacity: 90%;
+  }
+  .btngang{
+      display: flex;
+  }
+  #pinchange{
+    color: white;
+    background-color: #333333;
+    border-radius: 4px;
+    font-size: 0.8em;
+    height: 35px;
+    width: 100%;
+}
+#next{
+    background-color: white;
+    color: #999999;
+    border: 0px;
+    font-size: 0.8em;
+    height: 35px;
+    margin-left: 10px;
+}
+#next:hover{
+    color:black;
+}
+.card {
+    height: calc(100% - 15px);
+    margin-bottom: 7px;
+}
+.head2{
+    position: absolute;
+    margin-top: 330px;
+    margin-left: 280px;
+    font-size: 1.3em;
+}
+.productcards{
+    position: absolute;
+    margin-top: 390px;
+    margin-left: 250px;
+}
+.productcards h6{
+    opacity: 50%;
+}
+.checked{
+    color: orange;
+}
+#cutprice{
+    opacity: 40%;
+}
+#cutprice,#price{
+    font-size: 0.9rem;
+}
+#off{
+    opacity: 70%;
+    border: 2px solid rgba(0, 0, 0, 0.473);
+    padding: 2px;
+    font-size: 0.7em;
+}
+#cardlist{
+    display: flex;
+    list-style-type: none;   
+}
+#cardlist li:not(:nth-child(1)){
+    margin-left: 30px;
+}
+#cardlist li:hover{
+    cursor: pointer;
+    box-shadow:0px 0px 5px #33333369;
+}
+#bannertwo{
+    width: 1500px;
+    padding: 30px;
+    border-radius: 40px;
+}
+#footcard h5,p{
+    text-align: center;
+}
+#footcard p{
+    color:#3b393988;
+    font-size: 14px;
+}
+.brmedium { 
+    display: block; 
+    margin-bottom: 1em; 
+} 
+#footcard i{
+    font-size:40px;
+    text-align: center;
+    padding-top: 20px;
+}
+#footcard{
+    list-style: none;
+    display: flex;
+}
+#footcardlogo{
+    width: 50px;
+    margin-left: 120px;
+}
+#footcard li div{
+    border-radius: 0px;
+    margin-bottom: 2px;
+    padding: 11px;
+}
+#footcard li:hover{
+    cursor: pointer;
+}
+.fcpack{
+ margin-left: 95px;
+}
+foot ul{
+    list-style: none;
+    padding: 20px;
+}
+#footul h5{
+    font-size: 15px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#one,#two,#three,#four,#five{
+ margin-left: 60px;
+}
+#one ul li ,#two ul li,#three ul li,#four ul li,#five ul li{
+    color:#A5A5A5;
+}
+#one ul li:hover:not(:nth-child(1)) ,#two ul li:hover:not(:nth-child(1)),#three ul li:hover:not(:nth-child(1)),#four ul li:hover:not(:nth-child(1)){
+    color:black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+foot #footul{
+    display: flex;
+}
+foot ul li{
+    font-size: 12px;
+}
+#pregister{
+    text-align: left;
+}
+.endingul , .socialul , .theend ul{
+    display: flex;
+    list-style: none;
+}
+.endingul li:not(:nth-child(2)){
+    margin-left: 95px;
+}
+.endingul li:not(:nth-child(1)){
+    margin-left: 500px;
+}
+.payul{
+    display: flex;
+    list-style: none;
+}
+.payul li{
+    margin-left: 95px; 
+}
+.payul li:not(:nth-child(1)) , .socialul li:not(:nth-child(1)){
+    margin-left: 20px;
+}
+.payul li img{
+    width: 45px;
+}
+.socialul li img{
+    width: 30px;
+}
+.socialul li{
+margin-left: 290px;
+}
+.theend ul li{
+font-size: 0.75rem;
+opacity: 80%;;
+}
+.theend ul li:not(:nth-child(1)){
+    margin-left: 600px;
+}
+.theend ul li:not(:nth-child(2)){
+    margin-left: 95px;
+}
