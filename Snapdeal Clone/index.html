@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://www.snapdeal.com/img/icons/finalFavicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">    
     <script src="https://kit.fontawesome.com/8be394b40a.js" crossorigin="anonymous"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>  
-<title>Document</title>
+<title>Online Shopping Site India - Shop Electronics, Mobiles, Men & Women Clothing, Shoes - www. Snapdeal.com</title>
 </head>
 <body>
 <nav>
@@ -24,7 +25,7 @@
     <div class="nav2">
         <img src="https://logos-download.com/wp-content/uploads/2016/10/SnapDeal_logo_logotype.png" alt="logo">
         <input id="search" type="text" placeholder="Search products & brands">
-        <button id="searchbtn" type="button" class="btn btn-secondary"><i id="searchlogo" class="fas fa-search"></i>Search</button>
+        <button id="searchbtn" type="button" class="btn btn-secondary shadow-none"><i id="searchlogo" class="fas fa-search"></i>Search</button>
         <button id="sidebtn1">Cart <i id="logo" class="fas fa-shopping-cart"></i></button>
         <button id="sidebtn2">Rishu<i id="logo2" class="fas fa-user-circle"></i></button>
     </div>
@@ -153,10 +154,12 @@
           <img src="https://lh6.googleusercontent.com/proxy/XpSe3LcKwN39Gz8nz0OLeErIzsQDhPXvIJh3_IVTvwYWLAHXWEgFPzDG0H9I_O-DVgu32SGI1J71xFvmg8D-nj9qQyrnardmTDxW_qLNLfFyRzHRjR9uQMNkjRfj2EL6Fakqfw4=s0-d" alt="navigation">
          <p class="asidep1">Your Delivery Pincode</p>
          <p class="asidep2">Enter your pincode to check availability and faster delivery options</p>
-        <p class="asidep3">Pincode: </p>
+         <p id="pin" style="display: none;font-family:Arial;font-size: 14px;"></p>
+        <input id="id1" class="asidep3" type="text" placeholder="Enter Pincode" maxlength="6">
+        <span id="err" style="color:red;font-size:12px;display: none;">Please enter a valid pincode</span>
         <div class="btngang">
-            <button id="pinchange" type="button" class="btn btn-secondary">CHANGE PINCODE</button>
-            <button id="next" type="button" class="btn btn-secondary">NEXT</button>    
+            <button onclick="myfun()" id="pinchange" type="button" class="btn btn-secondary shadow-none">SUBMIT</button>
+            <button id="next" type="button" class="btn btn-secondary shadow-none">NEXT</button>    
         </div>
         </div>
       </div>
@@ -237,7 +240,7 @@
     <li id="five">
       <ul>
         <li><h5>SUBSCRIBE</h5></li>
-        <li><input id="mail" type="email" placeholder="Your email address"><button id="subscribebtn" type="button" class="btn btn-secondary">SUBSCRIBE</button></li>
+        <li><input id="mail" type="email" placeholder="Your email address"><button id="subscribebtn" type="button" class="btn btn-secondary shadow-none">SUBSCRIBE</button></li>
         <li><p id="pregister">Register now to get updates on promotions and <br>
           coupons.<a href="https://play.google.com/store/apps/details?id=com.snapdeal.main&hl=en_IN&gl=US"> Or Download App</a></p></li>
       </ul> 
@@ -271,5 +274,6 @@
     <li>Made with<img style="width: 30px;" src="https://media.tenor.com/images/097deb07cba04726e9906e96f20aeb6f/tenor.gif" alt="gifheart">in India</li>
   </ul>
 </div>
+<script src="app.js"></script>
 </body>
 </html>
