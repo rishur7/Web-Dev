@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8be394b40a.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="firstbg"></div> 
+    <div id="bgimg" class="secondbg"></div>
+    <div class="transparentbg">
+        <button onclick="clickfun()" class="searchbtn"><i id="searchicon" class="fas fa-search"></i></button>
+        <input id="search" placeholder="Another location">
+        <br>
+        <p class="wd">Weather Details</p>
+        <ul class="startul">
+            <li>
+                <ul class="firstul">
+                    <li>Sky</li>
+                    <li>Humidity</li>
+                    <li>Wind</li>
+                </ul>
+            </li>
+            <li>
+                <ul class="secondul">
+                    <li id="cloudy"></li>
+                    <li id="humidity"></li>
+                    <li id="wind"></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="vacantbg">
+    <ul class="info">
+        <li><h1 id="temp"></h1></li>   
+        <li><h1 id="cityname"></h1>
+        <p id="date"></p>
+     </li>   
+     <li>
+        <img id="weathericon" src="" alt="icon"/>
+        <p id="weatherdes">Cloudy</p></li>
+</ul>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

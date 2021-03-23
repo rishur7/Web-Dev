@@ -1,0 +1,205 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  @media all and (max-width:  475px){
+   div .searchbtn{
+    width: 50px;
+    height: 50px;
+    }
+   body #searchicon{
+        font-size: 20px;
+        opacity: 70%;
+    }
+    body .secondbg{
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    }
+    body .wd{
+        font-size: 1.5em;
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+    body .transparentbg{
+        top: 0%;
+        left: 0%;
+        height: 40%;
+        width: 100%;
+    }
+    body .startul {
+       margin-top:20px; 
+    }
+    body .secondul{
+        margin-left: 80px;
+        margin-top: 3px;
+    }
+    body .firstul li , body .secondul li{
+        margin-top: 15px;
+        font-family: 'Robot',sans-serif;
+        color:rgb(218, 218, 218);
+        font-size: 18px;
+        font-weight: 600;
+    }
+    body input{
+        font-size: 1.3em;
+        height: 25px;
+        width: 100%;
+        margin-left: 0px;
+    }
+    body .info{
+        padding: 0px;
+    }
+    body .info li:nth-child(1){
+    margin-left: 150px;
+    font-size: 30px;
+    }
+    #cityname{
+        font-size: 30px;
+    }
+    body .info li:not(:nth-child(1)){
+        margin-top: 0px;
+        font-size: 20px;
+    }
+    body .info li {
+        margin-left:30px;
+    }
+    body .info li:nth-child(3) {
+    margin-left: 40px;
+    }
+  }
+  #date,#weatherdes{
+      text-align:center;
+  }
+  .transparentbg{
+    position: absolute;
+    text-align: center;
+    top: 5%;
+    right: 5%;
+    width: 30%;
+    height: 90%;
+    background-color: rgba(41, 41, 41, 0.459);
+  }
+  .startul {
+      list-style: none;
+      text-align: start;
+      margin-left: -15px;
+      margin-top: 30px;
+      display: flex;
+  }
+  .secondul{
+      margin-left: 150px;
+      margin-top: 34px;
+      text-align:end;
+  }
+   .firstul , .secondul{
+      list-style: none;
+  }
+  .firstul li , .secondul li{
+      margin-top: 30px;
+      font-family: 'Robot',sans-serif;
+      color:rgb(218, 218, 218);
+      font-size: 20px;
+      font-weight: 600;
+  }
+  .wd{
+    margin-top: 100px;
+    margin-left: -180px;
+    font-weight: 600;
+    font-size: 1.5em;
+    color:rgb(218, 218, 218);
+    font-family: 'Roboto',sans-serif;
+  }
+  input{
+    border: 0;
+    outline: 0;
+    margin-top: 60px;
+    margin-left: -50px;
+    height: 35px;
+    background: transparent;
+    width: 300px;
+    color:rgb(218, 218, 218);
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+  input::placeholder{
+      color:rgb(218, 218, 218);
+      opacity: 40%;
+      font-family: 'Roboto', sans-serif;
+  }
+.vacantbg{
+    position: absolute;
+    top: 55%;
+    left: -3%;
+    width: 60%;
+    
+  }
+.secondbg{
+    background-image: url("https://images.unsplash.com/photo-1534271057238-c2c170a76672?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+    position: absolute;
+    background-size: cover;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+.firstbg{
+    background-image: url("http://textures.world/wp-content/uploads/2018/10/01-Soft-Gradient-Background-copy-1.jpg");
+    height: 100%; 
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    filter: blur(8px);
+}
+h1,p{
+    margin: 9px;
+}
+ul li p{
+    text-align:end;
+    font-weight: 100;
+}
+.info{
+    list-style: none;
+    text-shadow:0px 1px 0px black;
+    color:rgb(255, 255, 255);
+    display: flex;
+    padding: 50px;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+}
+.info li:nth-child(1){
+    font-size: 55px;
+}
+.info li {
+    margin-left:10px;
+}
+.info li:nth-child(3) {
+margin-left: 40px;
+}
+.info li:not(:nth-child(1)){
+    margin-top: 33px;
+    font-size: 20px;
+}
+#weathericon{
+    width: 75px;
+    filter: drop-shadow(0px 0px 3px rgba(255, 255, 255, 0.719));
+}
+#weathericon , p {
+    margin: -6.5px;
+}
+.searchbtn{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border: 0px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(233, 112, 233);
+    cursor: pointer;
+}
+#searchicon{
+    font-size: 22px;
+    opacity: 70%;
+}
