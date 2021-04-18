@@ -1,0 +1,17 @@
+.card{
+    width: 1000px;
+    margin: 0 auto;
+}
+.card .card-body{
+    text-align: justify;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+p,h5{
+    font-family: 'Poppins', sans-serif;
+}
+.cmntdiv{
+    margin-left: 260px;
+}

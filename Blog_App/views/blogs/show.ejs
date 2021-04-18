@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styleshow.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <%- include('../partials/bootstrap') %>
+    <title>Show</title>
+</head>
+<body>
+    <%- include('../partials/nav') %>
+    <br>
+
+    <img style=" display: block;margin-left: auto;margin-right: auto;width: 50%; object-fit: cover;" width="500" height="400" src="<%= product.img %>">
+
+    <h1 style="text-align: center;"><%= product.name %></h1>
+
+    <div class="card">
+        <div class="card-body">
+          <p class="card-text"><%= product.desc %></p>
+        </div>
+      </div>
+   
+    <h5 style="text-align: center;">from <%= product.author %></h5>
+    <br>
+    <form style="display: inline;" method="POST" action="/blogs/<%= product._id %>/review">
+      <div class="cmntdiv">
+      <h6>Comments</h6>
+      <textarea name="review[body]" class="cmnt" placeholder="Add a new comment..." rows="4" cols="60" style="text-align: justify;resize: none;"></textarea><br>
+      <button style="margin-left:-3px;" class="btn btn-primary">Submit</button>
+      </form>
+      <div class="allcmnts">
+        <%for(let review of product.reviews){%>
+        <p><%= review.body %></p>
+      </div>
+        <%}%>
+</div>
+    <br>
+</body>
+</html>

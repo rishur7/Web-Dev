@@ -1,0 +1,48 @@
+body{
+    background-color: #1A2133;
+}
+.lhs{
+    margin-left: 100px;
+}
+.lhs img{
+    width: 200px;
+}
+h1{
+    color: white;
+    font-family: 'Catamaran', sans-serif;
+}
+h4{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.bgrhs{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    right: 200px;
+    top:120px;
+    background: rgba(248, 248, 248, 0.116);
+    border-radius: 500px;
+    animation: size 5s linear infinite alternate;
+    transform-origin: center;
+}
+@keyframes size {
+    0%{
+        transform:scale(1);
+    }
+    100%{
+        transform: scale(1.3);
+    }
+}
+.rhs{
+    width: 200px;
+    position:absolute;
+    color: white;
+    right: 300px;
+    top:170px;
+    text-align: center;
+}
+.founderimg{
+    border-radius:50%;
+    width: 200px;
+}

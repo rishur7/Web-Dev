@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <%- include('../partials/bootstrap') %>
+</head>
+<body>
+    <%- include('../partials/nav') %>
+    <br>
+    <ul>
+        <div class="row">
+        <%for(let product of blogs){%>
+            <div class="col-lg-3 mb-4">
+            <div class="card" style="width: 18rem;">
+                <img src="<%= product.img %>" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><%= product.name %></h5>
+                  <h6 class="card-title"><%= product.author %></h6>
+                  <p class="card-text" id="overflow"><%= product.desc %></p>
+                  <div style="margin-left: 30px;" class="btn-group" role="group" aria-label="Basic mixed styles example">
+                    <a href="/blogs/<%= product._id %>" type="button" class="btn btn-warning">Show</a>
+                    <a href="/blogs/<%= product._id %>/edit" type="button" class="btn btn-success">Edit</a>
+                    <form style="display: inline;" method="POST" action="/blogs/<%= product._id %>?_method=DELETE">
+                    <button style="margin-left:-3px;" class="btn btn-danger">Delete</button>
+                </form>
+                </div>
+                </div>
+              </div>
+            </div>
+        <%}%>
+    </div>
+    </ul>
+
+
+<p style="text-align:center;"><a style="text-align: center;" href="/blogs/new" class="btn btn-primary">Add New Blog</a></p>
+</body>
+</html>
