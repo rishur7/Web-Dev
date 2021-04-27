@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Product = require('./models/blogs');
+const Blog = require('./models/blogs');
 const arr = [
     {
         name: 'My City',
@@ -23,7 +23,7 @@ const arr = [
 ]
 
 function seedDB() {
-    Product.insertMany(arr)
+    Blog.insertMany(arr)
     .then(() => {
         console.log("DATA INSERTED");
     })

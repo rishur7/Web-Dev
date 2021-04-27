@@ -1,0 +1,9 @@
+#add{
+    color: rgba(170, 170, 170, 0.836);
+    transition-duration: 0.1s;
+    border-radius: 100px;
+}
+#add:hover,:focus{
+    cursor: pointer;
+    color:rgb(32, 191, 202);
+}

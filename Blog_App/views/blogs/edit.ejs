@@ -12,22 +12,22 @@
 
     <h1 style="padding: 20px;">Edit Your Blog</h1>
 
-    <form style="padding: 20px;" method="POST" action="/blogs/<%=product._id%>?_method=PATCH">
+    <form style="padding: 20px;" method="POST" action="/blogs/<%=blog._id%>?_method=PATCH">
         <div class="mb-3" >
           <label class="form-label">Title</label>
-          <input type="text" name="name" placeholder="Blog Name" value="<%=product.name%>" class="form-control" style="width: 200px;">
+          <input type="text" name="name" placeholder="Blog Name" value="<%=blog.name%>" class="form-control" style="width: 200px;">
         </div>
         <div class="mb-3" >
           <label class="form-label">Author</label>
-          <input type="text" name="author" placeholder="Author Name" value="<%=product.author%>" class="form-control" style="width: 200px;">
+          <input type="text" name="author" placeholder="Author Name" value="<%=blog.author%>" class="form-control" style="width: 200px;text-transform: capitalize;" readonly="readonly">
         </div>
         <div class="mb-3" >
           <label class="form-label">Image Url</label>
-          <input type="text" name="img" placeholder="Blog Image" value="<%=product.img%>" class="form-control" style="width: 200px;">
+          <input type="text" name="img" placeholder="Blog Image" value="<%=blog.img%>" class="form-control" style="width: 200px;">
         </div>
         <div class="mb-3">
         <label class="form-label">Blog Description</label> <br>
-        <textarea name="desc" placeholder="Blog Desc" rows="10" cols="110" style="text-align: justify;"><%=product.desc%></textarea> <br>
+        <textarea name="desc" placeholder="Blog Desc" rows="10" cols="110" style="text-align: justify;"><%=blog.desc%></textarea> <br>
         </div>
         <button type="submit" class="btn btn-primary">Update</button>
       </form>

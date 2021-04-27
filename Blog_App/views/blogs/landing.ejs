@@ -19,9 +19,14 @@
     <div class="lhs">
         <img src="https://i.ibb.co/z6R476m/r7blogs.png" alt="r-7 blogs">
         <br>
-        <h1>The art of bringing your thoughts to screen</h1>
+        <h1>The art of bringing your thoughts to screen.</h1>
+        <%if(!currentUser){%>
+
+            <%}else{%>
+        <h2>Hey there <span id="username"> <%= currentUser.username %></span></h2>
+        <%}%>
         <h4>Get started with R-7 Blogs now...</h4>
-        <a class="btn btn-primary" href="/blogs">Let's Go</a>
+        &nbsp<a class="btn btn-primary" href="/blogs">Let's Go</a>
     </div> 
     <div class="bgrhs"></div>
     <div class="rhs">

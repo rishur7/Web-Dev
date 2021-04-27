@@ -15,3 +15,22 @@ p,h5{
 .cmntdiv{
     margin-left: 260px;
 }
+.cmntdes{
+    background-color: rgba(184, 181, 181, 0.247);
+    width: 450px;
+    word-break: break-all;
+    height: fit-content;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+#delbtn{
+    color: rgba(122, 121, 121, 0.836);
+    transition-duration: 0.1s;
+    border-radius: 100px;
+}
+#delbtn:hover{
+    cursor: pointer;
+    color:#df413c;
+}

@@ -7,9 +7,12 @@ body{
 .lhs img{
     width: 200px;
 }
-h1{
+h1,h2{
     color: white;
     font-family: 'Catamaran', sans-serif;
+}
+#username{
+    text-transform: capitalize;
 }
 h4{
     color: white;
@@ -20,7 +23,7 @@ h4{
     width: 400px;
     height: 400px;
     right: 200px;
-    top:120px;
+    top:140px;
     background: rgba(248, 248, 248, 0.116);
     border-radius: 500px;
     animation: size 5s linear infinite alternate;

@@ -1,29 +1,34 @@
-<nav class="navbar navbar-expand-md navbar-fixed-top navbar-dark bg-dark main-nav">
-    <div class="container">
-        <ul class="nav navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="http://localhost:3000/">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="http://localhost:3000/blogs">Blogs</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="http://localhost:3000/blogs/new">New</a>
-            </li>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid ">
+      <a class="navbar-brand" href="#"><img src="https://i.ibb.co/z6R476m/r7blogs.png" width="50">R-7 Blogs</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div  class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blogs">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/rishabh-srivastava-r7/" target="_blank">Contact</a>
+          </li>
+          <li class="nav-item dropdown" style="float: right;">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+               <% if(!currentUser){ %>
+                    <li><a class="dropdown-item" href="/login">Login</a></li>
+                    <li><a class="dropdown-item" href="/register">Register</a></li>
+              <%}else{%>
+                <li><a class="dropdown-item" href="/logout">Logout</a></li>
+                <%}%>
+            </ul>
+          </li>
         </ul>
-        <ul class="nav navbar-nav mx-auto">
-            <li class="nav-item"><a class="nav-link" href="#">R7-Blogs</a></li>
-        </ul>
-        <ul class="nav navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="https://www.deviantart.com/rishu07" target="_blank">Creations</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Help</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://www.linkedin.com/in/rishabh-srivastava-r7/" target="_blank">Contact</a>
-            </li>
-        </ul>
+      </div>
     </div>
-</nav>
+  </nav>

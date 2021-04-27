@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Review= require('./reviews');
+const Comment= require('./comments');
 const blogschema = new mongoose.Schema({
     name: {
         type: String,
@@ -16,15 +16,15 @@ const blogschema = new mongoose.Schema({
         type: String,
         minLength:10
     },
-    reviews:[
+    comments:[
         {
         type: mongoose.Schema.Types.ObjectId,
-        ref:'Review'
+        ref:'Comment'
         }
     ]
 
 })
 
-const Product = mongoose.model('Product', blogschema);
+const Blog = mongoose.model('Blog', blogschema);
 
-module.exports = Product;
+module.exports = Blog;

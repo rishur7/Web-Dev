@@ -19,7 +19,7 @@
           </div>
           <div class="mb-3" >
             <label class="form-label">Author</label>
-            <input type="text" name="author" placeholder="Name" class="form-control" style="width: 200px;">
+            <input type="text" name="author" id="disabledTextInput" value="<%= currentUser.username %>" class="form-control" style="width: 200px;text-transform: capitalize;" readonly="readonly">
           </div>
           <div class="mb-3" >
             <label class="form-label">Image Url</label>
