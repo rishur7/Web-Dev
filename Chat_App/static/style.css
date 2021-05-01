@@ -1,0 +1,23 @@
+#messagearea{
+    margin: 50px auto;
+    text-align: center;
+    width: 400px;
+    border: 2px solid;
+    min-height: 400px;
+    font-size: 20px;
+}
+#loginarea{
+    margin: 50px auto;
+    text-align: center;
+    width: 400px;
+    height: 100px;
+    font-size: 20px;
+}
+ul{
+    list-style: none;
+    font-size: 20px;
+    text-align: center;
+}
+li{
+    margin-right: 30px;
+}
